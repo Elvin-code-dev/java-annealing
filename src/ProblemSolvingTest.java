@@ -44,6 +44,15 @@ public class ProblemSolvingTest {
     assertTrue(actual);
   }
 
+      @Test
+  void testAllStartWithA_nonWithA() {
+    // arrange
+    Set<String> input = Set.of("car", "utopia", "tree");
+    // act
+    boolean actual = ProblemSolving.allStartWithA(input);
+    // assert
+    assertFalse(actual);
+  }
   
   
 
