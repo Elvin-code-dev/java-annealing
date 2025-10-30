@@ -35,6 +35,9 @@ public class ProblemSolvingTest {
   //  - test a set with only a single element
   //  - more you can think of!
 
+  
+  
+
   @Test
   void testHasEmptyString_falseAllNonEmpty() {
     // arrange
@@ -59,6 +62,15 @@ public class ProblemSolvingTest {
   // TODO:
   // Come up with more tests to thoroughly test hasEmptyString
   // Use your creativity here!
+  @Test
+  void testMaxLength_emptySet() {
+    // arrange
+    Set<String> input = Set.of();
+    // act
+    int actual = ProblemSolving.maxLength(input);
+    // assert
+    assertEquals(0, actual);
+  }
 
 
   @Test
