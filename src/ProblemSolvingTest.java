@@ -87,7 +87,18 @@ public class ProblemSolvingTest {
   // TODO:
   // Come up with more tests to thoroughly test maxLength
   // Use your creativity here!
+
+  @Test
+  void testMaxLength_Samelengthwords(){
+    //arange
+    Set<String> input = Set.of("to", "by", "he", "me");
+    // act
+    int actual = ProblemSolving.maxLength(input);
+    // assert
+    assertEquals(2, actual);
+  }
   
+
     
   
   // TODO:
