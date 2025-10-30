@@ -57,11 +57,13 @@ public class ProblemSolving {
    */
   public static int maxLength(Set<String> words) {
 
+    int maxLen = 0;
     for(String word : words){
-      int maxLength = word.length();
-      return maxLength;
+      if(word.length() > maxLen){
+        maxLen = word.length();
+      }
     }
-    return 0;
+    return maxLen;
   }
 
  /**
