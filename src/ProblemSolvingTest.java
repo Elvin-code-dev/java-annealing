@@ -105,5 +105,10 @@ public class ProblemSolvingTest {
   // Come up with ALL tests to thoroughly test minLength
   // Use your creativity here, and consider looking back at the maxLength
   // tests for inspiration
-
+  @Test
+  void testMinLength_emptySet(){
+    Set<String> input = Set.of();
+    int actual = ProblemSolving.minLength(input);
+    assertEquals(Integer.MAX_VALUE, actual);
+  }
 }

@@ -39,11 +39,14 @@ public class ProblemSolving {
    * @return true if there is at least one empty string, false otherwise
    */
   public static boolean hasEmptyString(Set<String> words) {
-    if(words.isEmpty()) {
-      return false;
-    } else {
-      return true;
+    boolean hasEmpty = false;
+
+    for(String word : words){
+      if(word.isEmpty()){
+        hasEmpty = true;
+      }
     }
+    return hasEmpty;
     
   }
 
